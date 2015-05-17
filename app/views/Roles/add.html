@@ -1,0 +1,35 @@
+<div>
+  <h3>Add a role</h3>
+  <br/>
+</div>
+
+<div class="myBorder4">
+  <p>
+    Tittle
+    <br/>
+    <input ng-required="true" ng-model="titleAdd" maxlength="30" type="text">
+  </p>
+
+  <p>
+    User (ID)
+    <br/>
+    <input ng-required="true" ng-model="userIdAdd" maxlength="10" type="text">
+  </p>
+
+  <p>
+    Project (ID)
+    <br/>
+    <input ng-required="true" ng-model="projectIdAdd" type="text" maxlength="60">
+  </p>
+
+</div>
+
+<div>
+  <p>
+    <br/>
+      <a class="btn btn-lg btn-success" ng-href="#/roles" ng-click="myAdd(titleAdd,userIdAdd,projectIdAdd)">
+        Validate
+      </a>
+  </p>
+
+</div>

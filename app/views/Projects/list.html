@@ -1,0 +1,31 @@
+<div class="alert alert-{{status}}">
+  {{message}}
+</div>
+
+<div class="myBorder3">
+  <h3>Search</h3>
+
+  <input ng-model="searchText"/> <span class="glyphicon glyphicon-search"></span>
+
+</div>
+
+<div>
+  <br/>
+
+  <h3>Project list - {{count}} element(s)</h3>
+
+  <ul>
+    <li class="myList" ng-repeat="project in projects | filter : searchText">
+      <span class="glyphicon glyphicon-folder-open"> </span>
+      <a href="#/projects/:{{project.id}}" class="myRef">
+        {{project.title}}
+      </a>
+    </li>
+  </ul>
+
+  <br/>
+  <p><a class="btn btn-lg btn-success" ng-href="#/addP">Add a project</a></p>
+</div>
+
+
+

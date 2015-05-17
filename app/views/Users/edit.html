@@ -1,0 +1,41 @@
+<div>
+  <h3>Edit</h3>
+  <br/>
+  <i>Laissez le champ vide pour ne pas changer sa valeur.</i>
+  <br/>
+</div>
+<br/>
+<div class="myBorder2">
+  <p>
+    Surname
+    <br/>
+    <input ng-model="surnameEdit" id="surname" ng-required="true" maxlength="20" type="text" placeholder="{{currentUser.surname}}">
+  </p>
+
+  <p>
+    Name
+    <br/>
+    <input ng-model="nameEdit" id="name" ng-required="true" value="{{currentUser.name}}" maxlength="20" type="text" placeholder="{{currentUser.name}}">
+  </p>
+
+  <p>
+    Email
+    <br/>
+    <input ng-model="emailEdit" id="email" value="{{currentUser.email}}" type="text" maxlength="40" placeholder="{{currentUser.email}}">
+  </p>
+
+  <p>
+    WebSite
+    <br/>
+    <input ng-model="websiteEdit" id="website" value="{{currentUser.website}}" type="text" maxlength="40" placeholder="{{currentUser.website}}">
+  </p>
+</div>
+<div>
+  <p>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/users/:{{currentUser.id}}" ng-click="myEdit(currentUser.id, nameEdit,surnameEdit,emailEdit,websiteEdit)">
+      Validate
+    </a>
+  </p>
+
+</div>

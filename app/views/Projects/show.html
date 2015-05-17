@@ -1,0 +1,38 @@
+<div>
+  <h3>Project {{currentProject.id}}</h3>
+  <br/>
+</div>
+
+<div class="myBorder">
+  <p>Tittle : <b>{{currentProject.title}}</b></p>
+  <p>Description : <b>{{currentProject.description}}</b></p>
+  <p>Year : <b>{{currentProject.year}}</b></p>
+  <p>
+    User(s) :
+  <ul>
+    <li class="myList2" ng-repeat="u in users">
+      <span class="glyphicon glyphicon-user"></span>
+      <a href="#/users/:{{u.id}}" class="myRef">
+        {{u.name}} {{u.surname}}
+      </a>
+    </li>
+  </ul>
+  </p>
+</div>
+
+  <p>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/editP/:{{currentProject.id}}">
+      Edit
+    </a>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/assignP/:{{currentProject.id}}">
+      Assign to an user
+    </a>
+    <a class="btn btn-lg btn-success" ng-click="myDelete(currentProject.id)" ng-href="#/projects" >
+      Delete
+    </a>
+  </p>
+
+<p class="myItalic">Create on {{currentProject.createdAt}}.</p>
+<p class="myItalic">Last edit on {{currentProject.updatedAt}}.</p>

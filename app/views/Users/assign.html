@@ -1,0 +1,28 @@
+<div>
+  <h3>Assign to a project</h3>
+  <br/>
+</div>
+
+<div class="myBorder5">
+  <p>
+    Role tittle
+    <br/>
+    <input ng-required="true" ng-model="roleAdd" maxlength="20" type="text">
+  </p>
+
+  <p>
+    Project (ID)
+    <br/>
+    <input ng-required="true" ng-model="projectAdd" maxlength="10" type="text">
+  </p>
+</div>
+
+<div>
+  <p>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/users/:{{currentUser.id}}" ng-click="myAssign(roleAdd,projectAdd)">
+      Validate
+    </a>
+  </p>
+
+</div>

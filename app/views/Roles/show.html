@@ -1,0 +1,24 @@
+<div>
+  <h3>Role {{currentRole.id}}</h3>
+  <br/>
+</div>
+
+<div class="myBorder">
+  <p>Tittle : <b>{{currentRole.name}}</b></p>
+  <p>User : ({{currentRole.UserId}}) <a href="#/users/:{{currentRole.UserId}}" class="myRef"><b>{{username}} {{usersurname}}</b></a></p>
+  <p>Project : ({{currentRole.ProjectId}}) <a href="#/projects/:{{currentRole.ProjectId}}" class="myRef"><b>{{projecttitle}}</b></a></p>
+</div>
+
+  <p>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/editR/:{{currentRole.id}}">
+      Edit
+    </a>
+    <a class="btn btn-lg btn-success" ng-click="myDelete(currentRole.id)" ng-href="#/roles" >
+      Delete
+    </a>
+  </p>
+
+<br/>
+<p class="myItalic">Create on {{currentRole.createdAt}}.</p>
+<p class="myItalic">Last edit on {{currentRole.updatedAt}}.</p>

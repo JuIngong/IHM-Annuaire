@@ -1,0 +1,35 @@
+<div>
+  <h3>Add a project</h3>
+  <br/>
+</div>
+
+<div class="myBorder2">
+  <p>
+    Title
+    <br/>
+    <input ng-required="true" ng-model="titleAdd" maxlength="20" type="text">
+  </p>
+
+  <p>
+    Description
+    <br/>
+    <input class="myDescription" ng-model="descriptionAdd" maxlength="256" type="text">
+  </p>
+
+  <p>
+    Year
+    <br/>
+    <input ng-model="yearAdd" type="text" maxlength="4">
+  </p>
+
+</div>
+
+<div>
+  <p>
+    <br/>
+      <a class="btn btn-lg btn-success" ng-href="#/projects/:{{currentProject.id}}" ng-click="myAdd(titleAdd,descriptionAdd,yearAdd)">
+        Validate
+      </a>
+  </p>
+
+</div>

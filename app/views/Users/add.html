@@ -1,0 +1,40 @@
+<div>
+  <h3>Add an user</h3>
+  <br/>
+</div>
+
+<div class="myBorder2">
+  <p>
+    Surname
+    <br/>
+    <input ng-required="true" ng-model="surnameAdd" maxlength="20" type="text">
+  </p>
+
+  <p>
+    Name
+    <br/>
+    <input ng-required="true" ng-model="nameAdd" maxlength="20" type="text">
+  </p>
+
+  <p>
+    Email
+    <br/>
+    <input ng-model="emailAdd" type="text" maxlength="40">
+  </p>
+
+  <p>
+    WebSite
+    <br/>
+    <input ng-model="websiteAdd" type="text" maxlength="40">
+  </p>
+</div>
+
+<div>
+  <p>
+    <br/>
+      <a class="btn btn-lg btn-success" ng-href="#/users" ng-click="myAdd(nameAdd,surnameAdd,emailAdd,websiteAdd)">
+        Validate
+      </a>
+  </p>
+
+</div>

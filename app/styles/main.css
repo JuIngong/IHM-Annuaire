@@ -1,0 +1,192 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: lightpink;
+  color: white;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: lightpink;
+  color : white;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  .myList {
+    color: pink;
+  }
+
+  .myList2 {
+    color: pink;
+    list-style-type: none;
+  }
+
+  .myRef {
+    color: hotpink;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .myButton {
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: white;
+  }
+
+  .myLabel {
+    color:hotpink;
+  }
+
+  input {
+    border-color: hotpink;
+    color: hotpink;
+    text-align: center;
+    font-weight: bold;
+    width: 350px;
+  }
+
+  .myItalic {
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  h3 {
+    color: hotpink;
+    font-weight: bold;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  }
+
+
+  .myBorder {
+    border-radius: 10px;
+    background-color: lightpink;
+    border-bottom: 0;
+    text-align: center;
+    font-family: monospace;
+    width: 400px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .myBorder2 {
+    border-radius: 10px;
+    background-color: lightpink;
+    border-bottom: 0;
+    width: 400px;
+    height: 230px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .myBorder3 {
+    border-radius: 10px;
+    background-color: lightpink;
+    border-bottom: 0;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .myBorder4 {
+    border-radius: 10px;
+    background-color: lightpink;
+    border-bottom: 0;
+    width: 400px;
+    height: 170px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .myBorder5 {
+    border-radius: 10px;
+    background-color: lightpink;
+    border-bottom: 0;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn.btn-lg.btn-success {
+    background-color: lightpink;
+    border-color: white;
+    width: 400px;
+  }
+
+  .myDescription {
+    height: 80px;
+  }
+}

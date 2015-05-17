@@ -1,0 +1,35 @@
+<div>
+  <h3>Edit</h3>
+  <br/>
+</div>
+<br/>
+<div class="myBorder2">
+  <p>
+    Tittle
+    <br/>
+    <input ng-model="titleEdit" id="title" value="{{currentProject.title}}" ng-required="true" maxlength="20" type="text" placeholder="{{currentProject.title}}">
+  </p>
+
+  <p>
+    Year
+    <br/>
+    <input ng-model="yearEdit" id="year" value="{{currentProject.year}}" type="text" maxlength="4" placeholder="{{currentProject.year}}">
+  </p>
+
+  <p>
+    Description
+    <br/>
+    <input class="myDescription" ng-model="descriptionEdit" id="description" ng-required="true" value="{{currentProject.description}}" maxlength="255" type="text" placeholder="{{currentProject.description}}">
+  </p>
+
+
+</div>
+<div>
+  <p>
+    <br/>
+    <a class="btn btn-lg btn-success" ng-href="#/projects/:{{currentProject.id}}" ng-click="myEdit(currentProject.id, titleEdit,descriptionEdit,yearEdit)">
+      Validate
+    </a>
+  </p>
+
+</div>

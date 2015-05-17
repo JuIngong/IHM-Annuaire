@@ -1,0 +1,30 @@
+<div class="alert alert-{{status}}">
+  {{message}}
+</div>
+
+<div class="myBorder3">
+  <h3>Search</h3>
+
+  <input ng-model="searchText"/> <span class="glyphicon glyphicon-search"></span>
+
+</div>
+
+<div>
+  <br/>
+
+  <h3>User list - {{count}} element(s)</h3>
+
+  <ul>
+    <li class="myList" ng-repeat="user in users | filter : searchText">
+      <a href="#/users/:{{user.id}}" class="myRef"><span class="glyphicon glyphicon-user"></span></a>
+      <a href="#/users/:{{user.id}}" class="myRef">
+        {{user.name}} {{user.surname}}
+      </a>
+    </li>
+  </ul>
+  <br/>
+  <p><a class="btn btn-lg btn-success" ng-href="#/add">Add an user</a></p>
+</div>
+
+
+
